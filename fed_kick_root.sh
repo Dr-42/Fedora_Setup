@@ -6,6 +6,12 @@ echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
 # Add fastest mirror to dnf
 echo "fastestmirror=true" >> /etc/dnf/dnf.conf
 
+# NVIDIA Drivers
+dnf install xorg-x11-drv-nvidia -y
+dnf install xorg-x11-drv-nvidia-cuda -y
+dnf install xorg-x11-drv-nvidia-cuda-libs -y
+dnf install xorg-x11-drv-nvidia-libs -y
+
 # Replace GNOME with KDE
 dnf swap @gnome-desktop @kde-desktop -y
 
@@ -30,3 +36,10 @@ dnf install glew-devel -y
 dnf install glm-devel -y
 dnf install stb-devel -y
 dnf install assimp-devel -y
+dnf install ncurses-devel -y
+
+#install nodejs
+dnf install nodejs -y
+
+#install filelight
+dnf install filelight -y
