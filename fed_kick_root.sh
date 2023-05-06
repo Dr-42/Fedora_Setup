@@ -19,7 +19,7 @@ systemctl disable gdm
 systemctl enable sddm
 
 # Install Important packages
-dnf install alacriitty -y
+dnf install alacritty -y
 dnf install neovim -y
 dnf install gh -y
 dnf install zsh -y
