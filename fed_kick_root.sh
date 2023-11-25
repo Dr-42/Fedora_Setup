@@ -2,9 +2,9 @@
 # Entire script is runs on root user
 
 # Add parrallel download to dnf
-echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
+echo "\nmax_parallel_downloads=10\n" >> /etc/dnf/dnf.conf
 # Add fastest mirror to dnf
-echo "fastestmirror=true" >> /etc/dnf/dnf.conf
+echo "fastestmirror=true\n" >> /etc/dnf/dnf.conf
 
 # NVIDIA Drivers
 dnf install xorg-x11-drv-nvidia -y
@@ -19,7 +19,9 @@ systemctl disable gdm
 systemctl enable sddm
 
 # Install Important packages
-dnf install alacritty -y
+# dnf install alacritty -y
+dnf copr enable wezfurlong/wezterm-nightly -y
+dnf install wezterm -y
 dnf install neovim -y
 dnf install gh -y
 dnf install zsh -y
