@@ -20,8 +20,7 @@ systemctl enable sddm
 
 # Install Important packages
 # dnf install alacritty -y
-dnf copr enable wezfurlong/wezterm-nightly -y
-dnf install wezterm -y
+dnf install kitty -y
 dnf install neovim -y
 dnf install gh -y
 dnf install zsh -y
