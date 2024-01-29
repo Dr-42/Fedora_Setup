@@ -48,5 +48,14 @@ dnf install nodejs -y
 #install filelight
 dnf install filelight -y
 
-#install htop
-dnf install htop -y
+#install btop
+dnf install btop -y
+
+# install multimedia
+dnf install libavcodec-freeworld -y
+dnf install x265-libs libde265 -y
+dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-39.noarch -y
+dnf group upgrade --with-optional Multimedia --allowerasing -y
+dnf install ffmpeg-free-devel -y
+dnf install mpv-devel -y
+dnf install vlc -y
