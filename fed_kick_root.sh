@@ -35,6 +35,9 @@ dnf install wl-clipboard -y
 dnf install gcc -y
 dnf install g++ -y
 
+# Install rust
+dnf install rustup -y
+
 dnf install glfw-devel -y
 dnf install glew-devel -y
 dnf install glm-devel -y
